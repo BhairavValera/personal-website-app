@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import NavItem from './NavItem'
+import profile from '../images/Profile.jpg'
+import FadeIn from 'react-fade-in'
 
 class NavBar extends Component {
 
@@ -22,12 +24,19 @@ class NavBar extends Component {
     render() {
         return (
             <nav>
-                <ul>
-                    <NavItem item='Home' tolink='/' activec={this.activeitem}></NavItem>
-                    <NavItem item='About' tolink='/about' activec={this.activeitem}></NavItem>
-                    <NavItem item='Projects' tolink='/projects' activec={this.activeitem}></NavItem>
-                    <NavItem item='Contact' tolink='/contact' activec={this.activeitem}></NavItem>
-                </ul>
+                <FadeIn delay='150'>
+                    <img src={profile} alt='profile' className='profile'></img>
+                    <h1 className='title'> Bhairav Valera </h1>
+                    <h1 className='subtitle'> Seattle-Based Full Stack Engineer </h1>
+                    <ul>
+                        <FadeIn delay='200'>
+                            <NavItem item='Home' tolink='/' activec={this.activeitem}></NavItem>
+                            <NavItem item='About' tolink='/about' activec={this.activeitem}></NavItem>
+                            <NavItem item='Projects' tolink='/projects' activec={this.activeitem}></NavItem>
+                            <NavItem item='Contact' tolink='/contact' activec={this.activeitem}></NavItem>
+                        </FadeIn>
+                    </ul>
+                </FadeIn>
             </nav>
         )
     }
