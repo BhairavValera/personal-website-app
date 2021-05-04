@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
-import ReactTypingEffect from 'react-typing-effect'
+import Particles from 'react-particles-js'
 
 class Home extends Component {
     render() {
         return (
             <div className='condiv home'>
-                <ReactTypingEffect className='typingeffect' text={[
-                    "Hi, I'm Bhairav"
-                ]} speed={100} eraseDelay={700}/>
+                Home
             </div>
         )
     }

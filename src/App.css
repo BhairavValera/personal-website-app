@@ -1,10 +1,9 @@
 @import url('http://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 :root {
-  --sidebar-flex:1.5;
-  --condiv-flex:6;
+  --condiv-flex:6.2;
   --fontsize-p:1.2rem;
-  --fontsize-nav:1.6rem;
+  --fontsize-nav:1.4rem;
   --typing-font:3rem;
 }
 
@@ -23,17 +22,21 @@ body {
   min-height: 100vh;
 }
 
+.particles {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
 .condiv {
-  padding: 100px;
-  background-color: #f5f7ff;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1f2b42;
   flex:var(--condiv-flex)
 }
 
 nav {
-  height: 100vh;
-  width: 250px;
-  padding:60px 30px 0px 30px ;
-  flex:var(--sidebar-flex);
+  padding: 3.75rem 2.175rem 0rem 2.175rem ;
   background-color: #0E1C2D;
   position: sticky;
 }
@@ -41,31 +44,29 @@ nav {
 .profile {
   display: block;
   border-radius: 50%;
-  border: 5px solid white;
-  width: 220px;
-  height: 220px;
+  border: 0.313rem solid white;
+  width: 10.75rem;
+  height: 10.75rem;
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -25px;
+  margin-top: -1.563rem;
 }
 
 .title {
-  display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
-  padding: 5px;
+  margin-top: 0.625rem;
+  padding: 0.313rem;
   text-align: center;
   color: white;
   font-size: 1.9rem;
 }
 
 .subtitle {
-  display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 2px;
+  padding: 0.125rem;
   text-align: center;
   color: #b8b8b8;
   font-size: 0.96rem;
@@ -74,8 +75,6 @@ nav {
 
 nav ul
 {
-  display: table;
-  justify-content: center;
   font-size:var(--fontsize-nav);
   list-style-type: none;
   text-decoration: none;
@@ -84,32 +83,25 @@ nav ul
 
 nav ul li
 {
-  margin-top: 45px;
-  margin-left: 19px;
-  margin-right: auto;
+  margin-top: 2.813rem;
   text-align: center;
 }
 
 a {
   text-decoration: none;
   color: white;
-  border-radius: 6px;
-  padding: 8px 50px 8px 50px;
+  border-radius: 0.375rem;
+  padding: 0.5rem 3.125rem 0.5rem 3.125rem;
 }
 
 a:hover {
   background-color: #1976e0;
 }
 
-.active {
-  font-weight: bolder;
-  background-color: #1976e0;
-}
-
-/* .home, .about, .contact, .projects {
+.home, .about, .contact, .projects {
   display: flex;
-  height: 90vh;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
-} */
+  font-size: 4rem;
+  color: white;
+}

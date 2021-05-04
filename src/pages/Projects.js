@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { Component } from 'react'
+import ReactTypingEffect from 'react-typing-effect'
 
-function Projects() {
-    return (
-        <div className='projects'>
-            <h1>
+class Projects extends Component {
+    render() {
+        return (
+            <div className='condiv projects'>
                 Projects
-            </h1>
-        </div>
-    )
+                {/* <ReactTypingEffect className='typingeffect' text={[
+                    "Hi, I'm Bhairav"
+                ]} speed={100} eraseDelay={700}/> */}
+            </div>
+        )
+    }
 }
 
 export default Projects
+

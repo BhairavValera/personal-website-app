@@ -8,7 +8,7 @@ class NavBar extends Component {
     constructor(props) {
         super(props)
         this.state={
-            'NavItemActive':''
+            'NavItemActive':'Home'
         }
     }
 
@@ -16,7 +16,7 @@ class NavBar extends Component {
         if (this.state.NavItemActive.length > 0) {
             document.getElementById(this.state.NavItemActive).classList.remove('active');
         }
-        this.setState({'NavItemId': x}, () => {
+        this.setState({'NavItemActive': x}, () => {
             document.getElementById(this.state.NavItemActive).classList.add('active')
         })
     }
