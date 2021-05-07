@@ -1,14 +1,18 @@
 import React, { Component } from 'react'
-import ReactTypingEffect from 'react-typing-effect'
+import Particles from 'react-particles-js'
+import particlesConfig from '../components/particles'
+import FadeIn from 'react-fade-in'
 
 class Contact extends Component {
     render() {
         return (
-            <div className='condiv contact'>
+            <div id='Contact' className='contact'>
                 Contact
-                {/* <ReactTypingEffect className='typingeffect' text={[
-                    "Hi, I'm Bhairav"
-                ]} speed={100} eraseDelay={700}/> */}
+                <div className='particles'>
+                    <FadeIn delay='150'>
+                        <Particles height={window.outerHeight} params={particlesConfig}/>
+                    </FadeIn>
+                </div>
             </div>
         )
     }
