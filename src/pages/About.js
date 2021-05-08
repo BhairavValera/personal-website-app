@@ -6,14 +6,16 @@ import FadeIn from 'react-fade-in'
 class About extends Component {
     render() {
         return (
-            <div id='About' className='about'>
-                About
+            <div id='About'>
+                <p id="about-title" align="justify">
+                    About
+                </p>
                 <div className='particles'>
-                    <FadeIn delay='150'>
+                    <FadeIn delay='100'>
                         <Particles height={window.outerHeight} params={particlesConfig}/>
                     </FadeIn>
                 </div>
-            </div>            
+            </div>
         )
     }
 }

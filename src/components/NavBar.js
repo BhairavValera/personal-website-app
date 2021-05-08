@@ -7,15 +7,16 @@ class NavBar extends Component {
     render() {
         return (
             <nav>
-                <FadeIn delay='150'>
+                <FadeIn delay='20'>
                     <img src={profile} alt='profile' className='profile'></img>
                     <h1 className='title'> Bhairav Valera </h1>
                     <h1 className='subtitle'> Seattle-Based Full Stack Engineer </h1>
                     <ul className='nav-items'>
-                        <FadeIn delay='200'>
+                        <FadeIn delay='20'>
                             <li>
                                 <Link 
                                     activeClass="active"
+                                    id="Link"
                                     to="Home"
                                     spy={true}
                                     smooth={true}
@@ -26,6 +27,7 @@ class NavBar extends Component {
                             <li>
                                 <Link 
                                     activeClass="active"
+                                    id="Link"
                                     to="About"
                                     spy={true}
                                     smooth={true}
@@ -36,6 +38,7 @@ class NavBar extends Component {
                             <li>
                                 <Link 
                                     activeClass="active"
+                                    id="Link"
                                     to="Projects"
                                     spy={true}
                                     smooth={true}
@@ -46,6 +49,7 @@ class NavBar extends Component {
                             <li>
                                 <Link 
                                     activeClass="active"
+                                    id="Link"
                                     to="Contact"
                                     spy={true}
                                     smooth={true}
