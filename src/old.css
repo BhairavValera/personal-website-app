@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext&display=swap');
+
+:root {
+  --condiv-flex:6.2;
+  --fontsize-p:1.2rem;
+  --fontsize-nav:1.4rem;
+  --typing-font:3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.App {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.particles {
+  position: absolute;
+  height: 100vh;
+}
+
+#NavBar {
+  display: table-cell;
+  position: fixed;
+  height: 100%;
+  width: 19%;
+  padding: 3.5rem 0rem 0rem 0rem ;
+  background-color: #0E1C2D;
+}
+
+#Content {
+  display: table-cell;
+  vertical-align: top;
+  height: 100%;
+  width: 81%;
+  z-index: 999;
+}
+
+#footer {
+  padding-bottom: 2rem;
+}
+
+.profile {
+  display: block;
+  border-radius: 50%;
+  border: 0.313rem solid white;
+  width: 10.75rem;
+  height: 10.75rem;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -1.563rem;
+}
+
+.title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.625rem;
+  padding: 0.313rem;
+  text-align: center;
+  color: white;
+  font-size: 1.9rem;
+}
+
+.subtitle {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.125rem;
+  text-align: center;
+  color: #b8b8b8;
+  font-size: 0.96rem;
+  font-weight: 200;
+}
+
+nav ul
+{
+  font-size:var(--fontsize-nav);
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li
+{
+  margin-top: 2.0rem;
+  text-align: center;
+}
+
+#Link {
+  position: relative;
+  cursor: pointer;
+}
+
+#Link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+#Link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.active {
+  color: white;
+  margin-bottom: 0.1px;
+  border-bottom: 2px solid white;
+}
+
+#Home {
+  position: relative;
+  height: 100vh;
+  background-color: #1f2b42;
+  color: white;
+  display: flex;
+}
+
+#greeting {
+  position: relative;
+  margin-top: 10rem;
+  margin-right: 30rem;
+  margin-left: 3rem;
+  font-size: 1.7rem;
+  font-weight: lighter;
+}
+
+#heading {
+  position: relative;
+  margin-left: -0.3rem;
+  font-size: 6.5rem;
+  text-shadow: 5px 5px #558ABB;
+}
+
+#About {
+  height: 100vh;
+  background-color: #0f244d;
+  color: white;
+  display: flex;
+}
+
+#about-title {
+  position: absolute;
+  margin-left: 4rem;
+  margin-top: 5rem;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  text-shadow: 2px 2px #558ABB;
+}
+
+#about-section {
+  position: absolute;
+  width: 35%;
+  margin-left: 4rem;
+  margin-top: 11rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+/* #union {
+  display: inline-block;
+  width: 30rem;
+  height: auto;
+  margin-left: 130%;
+  margin-top: 4rem;
+  object-fit: cover;
+  box-shadow: 5px 5px #ffffff;
+  border-radius: 1%;
+}
+
+#flower {
+  display: inline-block;
+  width: 30rem;
+  height: auto;
+  margin-left: 30.5%;
+  margin-top: 27rem;
+  object-fit: cover;
+  box-shadow: 5px 5px #ffffff;
+  border-radius: 1%;
+} */
+
+#Experience {
+  height: 100vh;
+  background-color: #2f446d;
+  color: white;
+  display: flex;
+}
+
+#experience-title {
+  margin-left: 4rem;
+  margin-top: 5rem;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  text-shadow: 2px 2px #558ABB;
+}
+
+/* #Timeline {
+  /* position: absolute; */
+  /* margin-top: 11rem; */
+  /* font-size: 1.5rem;
+  font-weight: lighter;   
+} */
+
+
+#Projects {
+  height: 100vh;
+  background-color: #000c24;
+  color: white;
+  display: flex;
+}
+
+#projects-title {
+  margin-left: 4rem;
+  margin-top: 5rem;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  text-shadow: 2px 2px #558ABB;
+}
+
+#Contact {
+  height: 100vh;
+  background-color: #1c4780;
+  color: white;
+  display: flex;
+}
+
+#contact-title {
+  margin-left: 4rem;
+  margin-top: 5rem;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  text-shadow: 2px 2px #558ABB;
+}

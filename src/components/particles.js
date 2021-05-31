@@ -1,10 +1,10 @@
 const particlesConfig = {
     "particles": {
         "number": {
-          "value": 20,
+          "value": 69,
           "density": {
             "enable": true,
-            "value_area": 800
+            "value_area": 2000
           }
         },
         "color": {
@@ -26,7 +26,7 @@ const particlesConfig = {
           }
         },
         "opacity": {
-          "value": 0.5,
+          "value": 0.1,
           "random": false,
           "anim": {
             "enable": false,

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext&display=swap')
+
+$font-stack: Lato, sans-serif
+$font-size-nav: 1.5rem
+
+body
+    font: 100% $font-stack
+
+*
+    margin: 0
+
+#App
+    display: table
+    overflow: hidden
+
+    #particles
+        position: absolute
+        height: 100vh
+
+#NavBar
+    display: table-cell
+    width: 20%
+    height: 100%
+    background-color: #0E1C2D
+    padding: 3.5rem 0rem 0rem 0rem
+    position: fixed
+
+    .profile
+        display: block
+        border-radius: 50%
+        border: 0.313rem solid white
+        width: 10.75rem
+        height: 10.75rem
+        object-fit: cover
+        margin: auto
+
+    .title
+        margin: auto
+        text-align: center
+        color: white
+        font-size: 1.9rem
+        margin-top: 1rem
+
+    .subtitle
+        margin: auto
+        text-align: center
+        color: #b8b8b8
+        font-size: 0.96rem
+        font-weight: 200
+        margin-top: 0.5rem
+
+    ul
+        list-style-type: none
+        color: white
+        font-size: $font-size-nav
+        margin-top: 1rem
+        text-align: center
+        padding: 0
+
+        li
+            margin-top: 1.5rem
+            display: inline-block
+
+        #Link
+            cursor: pointer
+        
+        #Link::after
+            content: ""
+            display: block
+            width: 0%
+            border-bottom: 2px solid white
+            transition: all 0.2s ease-in-out
+        
+        #Link:hover::after
+            width: 100%
+
+        .active 
+            color: white
+            border-bottom: 2px solid white
+        
+#Content
+    display: table-cell
+    width: 80%
+
+    #Home
+        height: 100vh
+        background-color: #1f2b42
+        color: white
+        display: flex
+
+        #heading
+            position: absolute
+            margin-left: 3.5rem
+            margin-top: 10rem
+            font-size: 6.5rem
+            text-shadow: 5px 5px #558ABB
+
+        #greeting
+            position: absolute
+            margin-top: 18rem
+            margin-right: 30rem
+            margin-left: 4rem
+            font-size: 1.7rem
+            font-weight: lighter
+
+    #About
+        height: 100vh
+        background-color: #0f244d
+        color: white
+        display: flex
+
+        #about-title
+            position: absolute
+            margin-left: 4rem
+            margin-top: 5rem
+            font-size: 3.5rem
+            font-weight: bolder
+            text-shadow: 2px 2px #558ABB
+        
+        #about-section
+            position: absolute
+            width: 35%
+            margin-left: 4rem
+            margin-top: 11rem
+            font-size: 1.5rem
+            font-weight: lighter
+
+    #Experience
+        height: 100vh
+        background-color: #2f446d
+        color: white
+        display: flex
+
+        #experience-title
+            margin-left: 4rem
+            margin-top: 5rem
+            font-size: 3.5rem
+            font-weight: bolder
+            text-shadow: 2px 2px #558ABB
+
+    #Projects
+        height: 100vh
+        background-color: #000c24
+        color: white
+        display: flex
+
+        #projects-title
+            margin-left: 4rem
+            margin-top: 5rem
+            font-size: 3.5rem
+            font-weight: bolder
+            text-shadow: 2px 2px #558ABB
+
+    #Contact 
+        height: 100vh
+        background-color: #1c4780
+        color: white
+        display: flex
+
+        #contact-title
+            margin-left: 4rem
+            margin-top: 5rem
+            font-size: 3.5rem
+            font-weight: bolder
+            text-shadow: 2px 2px #558ABB
