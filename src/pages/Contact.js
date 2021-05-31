@@ -7,14 +7,14 @@ class Contact extends Component {
     render() {
         return (
             <div id='Contact'>
-                <p id="contact-title" align="justify">
+                <div id="contact-title" align="justify">
                     Contact
-                </p>
-                <div className='particles'>
+                </div>
+                {/* <div className='particles'>
                     <FadeIn delay='100'>
                         <Particles height={window.outerHeight} params={particlesConfig}/>
                     </FadeIn>
-                </div>
+                </div> */}
             </div>
         )
     }

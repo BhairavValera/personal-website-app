@@ -7,18 +7,17 @@ class Projects extends Component {
     render() {
         return (
             <div id='Projects'>
-                <p id="projects-title" align="justify">
+                <div id="projects-title" align="justify">
                     Projects
-                </p>
-                <div className='particles'>
+                </div>
+                {/* <div className='particles'>
                     <FadeIn delay='100'>
                         <Particles height={window.outerHeight} params={particlesConfig}/>
                     </FadeIn>
-                </div>
+                </div> */}
             </div>
         )
     }
 }
 
 export default Projects
-

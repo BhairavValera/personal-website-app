@@ -11,12 +11,12 @@ class Experience extends Component {
                 <div id="experience-title">
                     Experience
                 </div>
-                {/* <_Timeline/> */}
+                {/* <_Timeline/>
                 <div className='particles'>
                     <FadeIn delay='100'>
                         <Particles height={window.outerHeight} params={particlesConfig}/>
                     </FadeIn>
-                </div>
+                </div> */}
             </div>
         )
     }

@@ -12,7 +12,7 @@ class About extends Component {
                 <div id="about-title">
                     About
                 </div>
-                <p id='about-section' align="justify">
+                <div id='about-section' align="justify">
                     I majored in Physics and minored in Computer Science at the University of Illinois
                     at Urbana-Champaign (UIUC). 
                     <br />
@@ -28,19 +28,19 @@ class About extends Component {
                     <br />
                     In my free time, I pursue my artistic passions, namely, music, creative writing, and 
                     photography.
-                </p>
+                </div>
                 {/* <div id='sample-photos'>
                     <img src={union} alt="union" id="union"></img>
                 </div>
                 <br/>
                 <div id='sample-photos'>
                     <img src={flower} alt="flower" id="flower"></img>
-                </div>                 */}
+                </div>                 
                 <div className='particles'>
                     <FadeIn delay='100'>
                         <Particles height={window.outerHeight} params={particlesConfig}/>
                     </FadeIn>
-                </div>
+                </div>*/}
             </div>
         )
     }
