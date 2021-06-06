@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import TimeLine from '../components/Timeline'
-import FadeIn from 'react-fade-in'
 
 class Experience extends Component {
     render() {
