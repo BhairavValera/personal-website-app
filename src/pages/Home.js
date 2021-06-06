@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import Particles from 'react-particles-js'
-import particlesConfig from '../components/particles'
 import FadeIn from 'react-fade-in'
 
 class Home extends Component {
@@ -21,7 +19,7 @@ class Home extends Component {
                         <br/>                         
                         Have a look around and feel free to send me a message if you'd like to hear about my work!
                     </FadeIn>
-                </div>
+                </div>                
             </div>
         )
     }

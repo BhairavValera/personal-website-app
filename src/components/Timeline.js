@@ -6,34 +6,34 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 
-class _Timeline extends Component {
+class TimeLine extends Component {
     render() {
         return (
             <Timeline align="left">
                 <TimelineItem>
                     <TimelineSeparator>
-                    <TimelineDot variant="outlined" />
+                    <TimelineDot />
                     <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent>Eat</TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineSeparator>
-                    <TimelineDot variant="outlined" color="primary" />
+                    <TimelineDot color="primary" />
                     <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent>Code</TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineSeparator>
-                    <TimelineDot variant="outlined" color="secondary" />
+                    <TimelineDot color="secondary" />
                     <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent>Sleep</TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineSeparator>
-                    <TimelineDot variant="outlined" />
+                    <TimelineDot />
                     </TimelineSeparator>
                     <TimelineContent>Repeat</TimelineContent>
                 </TimelineItem>
@@ -42,4 +42,4 @@ class _Timeline extends Component {
     }
 }
 
-export default _Timeline
+export default TimeLine

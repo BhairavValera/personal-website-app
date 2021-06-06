@@ -91,6 +91,7 @@ body {
   font-size: 6.5rem;
   font-weight: bolder;
   text-shadow: 5px 5px #558ABB;
+  z-index: 2;
 }
 #Content #Home #greeting {
   margin-top: 2rem;
@@ -98,6 +99,7 @@ body {
   margin-right: 20rem;
   font-size: 1.7rem;
   font-weight: lighter;
+  z-index: 2;
 }
 #Content #About {
   display: flex;
