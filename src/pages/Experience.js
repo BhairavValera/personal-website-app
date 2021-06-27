@@ -8,7 +8,7 @@ class Experience extends Component {
                 <div id="experience-title">
                     Experience
                 </div>
-                <div>
+                <div id='Timeline'>
                     <TimeLine/>
                 </div>
             </div>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import FadeIn from 'react-fade-in'
 
 class Contact extends Component {
     render() {
@@ -8,11 +7,6 @@ class Contact extends Component {
                 <div id="contact-title" align="justify">
                     Contact
                 </div>
-                {/* <div className='particles'>
-                    <FadeIn delay='100'>
-                        <Particles height={window.outerHeight} params={particlesConfig}/>
-                    </FadeIn>
-                </div> */}
             </div>
         )
     }

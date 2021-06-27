@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import FadeIn from 'react-fade-in'
-import union from '../images/union.jpg'
-import flower from '../images/flower.jpg'
 
 class About extends Component {
     render() {
@@ -29,16 +27,6 @@ class About extends Component {
                         photography.
                     </FadeIn>
                 </div>
-                {/* <div className='Particles'>
-                    <Particles height={window.outerHeight} params={particlesConfig}/>
-                </div> */}
-                {/* <div id='sample-photos'>
-                    <img src={union} alt="union" id="union"></img>
-                </div>
-                <br/>
-                <div id='sample-photos'>
-                    <img src={flower} alt="flower" id="flower"></img>
-                </div>*/}
             </div>
         )
     }

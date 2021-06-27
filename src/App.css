@@ -136,6 +136,34 @@ body {
   font-weight: bolder;
   text-shadow: 2px 2px #558ABB;
 }
+#Content #Experience #Timeline {
+  width: 40rem;
+  height: 20rem;
+  margin-top: 3rem;
+  margin-left: -3rem;
+  font-weight: bolder;
+}
+#Content #Experience #ExperienceCard {
+  display: table;
+  background-color: white;
+  border-radius: 2%;
+  width: 15rem;
+}
+#Content #Experience #ExperienceCard #Logo {
+  display: table-cell;
+  width: 10%;
+}
+#Content #Experience #ExperienceCard #Logo #companyLogo {
+  margin: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+}
+#Content #Experience #ExperienceCard #companyInfo {
+  display: table-cell;
+  position: relative;
+  width: 90%;
+  color: black;
+}
 #Content #Projects {
   display: flex;
   flex-direction: column;
