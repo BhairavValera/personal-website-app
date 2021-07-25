@@ -140,14 +140,17 @@ body
             width: 40rem
             height: 20rem
             margin-top: 3rem
-            margin-left: -3rem
+            margin-left: 0rem
             font-weight: bolder
-        
+
         #ExperienceCard
             display: table
             background-color: white
-            border-radius: 2%
-            width: 15rem
+            border-radius: 7px
+            width: 19rem
+            box-shadow: 3px 3px #558ABB
+            margin-bottom: 0.5rem
+            transition: all 0.1s ease-in-out
 
             #Logo
                 display: table-cell
@@ -160,9 +163,13 @@ body
 
             #companyInfo
                 display: table-cell
-                position: relative
+                top: 5
                 width: 90%
                 color: black
+        
+        #ExperienceCard:hover
+            cursor: pointer
+            box-shadow: 6px 6px #558ABB
 
     #Projects
         display: flex
