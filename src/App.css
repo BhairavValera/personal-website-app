@@ -175,7 +175,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: #000c24;
+  background-color: #40546c;
   color: white;
 }
 #Content #Projects #projects-title {
@@ -189,7 +189,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: #1c4780;
+  background-color: #000c24;
   color: white;
 }
 #Content #Contact #contact-title {
@@ -198,6 +198,72 @@ body {
   font-size: 3.5rem;
   font-weight: bolder;
   text-shadow: 2px 2px #558ABB;
+}
+#Content #Contact #contact-links {
+  margin-top: 9rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+#Content #Contact #contact-links #github-box {
+  opacity: 0.7;
+}
+#Content #Contact #contact-links #github-box:hover {
+  opacity: 1;
+}
+#Content #Contact #contact-links .github {
+  height: 13rem;
+  width: 13rem;
+}
+#Content #Contact #contact-links .github:hover {
+  opacity: 1;
+}
+#Content #Contact #contact-links #github-text {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.6rem;
+}
+#Content #Contact #contact-links #linkedin-box {
+  opacity: 0.7;
+}
+#Content #Contact #contact-links #linkedin-box:hover {
+  opacity: 1;
+}
+#Content #Contact #contact-links .linkedin {
+  height: 13rem;
+  width: 13rem;
+  filter: invert(1);
+}
+#Content #Contact #contact-links .linkedin:hover {
+  opacity: 1;
+}
+#Content #Contact #contact-links #linkedin-text {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.6rem;
+}
+#Content #Contact #contact-links #mail-box {
+  opacity: 0.7;
+  cursor: pointer;
+}
+#Content #Contact #contact-links #mail-box:hover {
+  opacity: 1;
+}
+#Content #Contact #contact-links .mail {
+  height: 13rem;
+  width: 15rem;
+}
+#Content #Contact #contact-links .mail:hover {
+  opacity: 1;
+}
+#Content #Contact #contact-links #mail-text {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.6rem;
+}
+#Content #Contact #contact-links a {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=App.css.map */
