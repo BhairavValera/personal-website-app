@@ -4,7 +4,7 @@ import FadeIn from 'react-fade-in'
 class About extends Component {
     render() {
         return (
-            <div class="content about">
+            <div id="about" class="content about">
                 <div class="page-title">
                     About
                 </div>

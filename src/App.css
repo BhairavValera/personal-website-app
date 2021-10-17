@@ -11131,9 +11131,34 @@ body {
   overflow: hidden;
 }
 
+.nav {
+  right: 1rem;
+  top: 45%;
+  height: 5rem;
+  z-index: 999;
+  position: fixed;
+}
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav ul li {
+  position: relative;
+  background-color: white;
+  border: 3px solid white;
+  border-radius: 15px 15px 15px 15px;
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin-bottom: 15px;
+  vertical-align: bottom;
+}
+
 .content, .content.contact, .content.projects, .content.about, .content.home {
   display: flex;
   height: 100vh;
+  width: 100vw;
 }
 .content .page-title {
   margin-left: 4rem;
@@ -11141,12 +11166,28 @@ body {
   font-size: 3.5rem;
   font-weight: bolder;
   color: white;
+  text-shadow: 2px 2px #558ABB;
 }
 .content.home {
+  position: relative;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: #1f2b42;
+}
+.content.home #tsparticles {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+.content.home .greeting {
+  z-index: 2;
+  text-align: center;
+  font-size: 2.2rem;
+  color: white;
+  line-height: 1.5;
+  margin-bottom: 3rem;
 }
 .content.home .profile {
   border-radius: 50%;
@@ -11155,17 +11196,12 @@ body {
   height: 15rem;
   object-fit: cover;
   margin-bottom: 3rem;
-}
-.content.home .greeting {
-  text-align: center;
-  font-size: 2.2rem;
-  color: white;
-  line-height: 1.5;
-  margin-bottom: 3rem;
+  z-index: 2;
 }
 .content.home .btn-outline-light {
   color: white;
   font-size: 1.7rem;
+  z-index: 2;
 }
 .content.home .btn-outline-light:hover {
   color: black;

@@ -15,9 +15,36 @@ body {
     overflow: hidden;
 }
 
+.nav {
+    right: 1rem;
+    top: 45%;
+    height: 5rem;
+    z-index: 999;
+    position: fixed;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            position: relative;
+            background-color: white;
+            border: 3px solid white;
+            border-radius: 15px 15px 15px 15px;
+            cursor: pointer;
+            height: 1rem;
+            width: 1rem;
+            margin-bottom: 15px;
+            vertical-align:bottom;            
+        }
+    }
+}
+
 .content {
     display: flex;
     height: 100vh;
+    width: 100vw;
 
     .page-title {
         margin-left: 4rem;
@@ -25,15 +52,32 @@ body {
         font-size: 3.5rem;
         font-weight: bolder;
         color: white;
-        // text-shadow: 2px 2px #558ABB
+        text-shadow: 2px 2px #558ABB;
     }
 
     &.home {
         @extend .content;
+        position: relative;
         align-items: center;
         flex-direction: column;
         justify-content: center;
         background-color: #1f2b42;
+
+        #tsparticles {
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            z-index: 1;
+        }
+
+        .greeting {
+            z-index: 2;
+            text-align: center;
+            font-size: 2.2rem;
+            color: white;
+            line-height: 1.5;
+            margin-bottom: 3rem;
+        }
 
         .profile {
             border-radius: 50%;
@@ -42,24 +86,18 @@ body {
             height: 15rem;
             object-fit: cover;
             margin-bottom: 3rem;
-        }
-    
-        .greeting {
-            text-align: center;
-            font-size: 2.2rem;
-            color: white;
-            line-height: 1.5;
-            margin-bottom: 3rem;
+            z-index: 2;
         }
     
         .btn-outline-light {
             color: white;
             font-size: 1.7rem;
+            z-index: 2;
         }
         
         .btn-outline-light:hover {
             color: black;
-        }        
+        }
     }
 
     &.about {

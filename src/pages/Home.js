@@ -2,12 +2,15 @@ import React, { Component } from 'react'
 import profile from '../images/Profile.jpg'
 import FadeIn from 'react-fade-in'
 import { Button } from 'react-bootstrap'
+import Particles from 'react-particles-js'
+import particleParams from '../particlesjs-config.json'
 
 class Home extends Component {
     render() {
         return (
-            <div class="content home">
-                <img src={profile} alt="profile" class="profile"></img>
+            <div id="home" class="content home">
+                <Particles params={particleParams}/>
+                <img src={profile} alt="profile" class="profile"></img>                
                 <div class="greeting">
                     Hello, I'm Bhairav Valera.
                     <br></br>
