@@ -1,0 +1,120 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,700&subset=latin-ext&display=swap');
+
+$font-stack: Josefin Slab;
+
+body {
+    font: 100% $font-stack;
+}
+
+* {
+    margin: 0;
+}
+
+.app {
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    height: 100vh;
+
+    .page-title {
+        margin-left: 4rem;
+        margin-top: 3rem;
+        font-size: 3.5rem;
+        font-weight: bolder;
+        color: white;
+        // text-shadow: 2px 2px #558ABB
+    }
+
+    &.home {
+        @extend .content;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #1f2b42;
+
+        .profile {
+            border-radius: 50%;
+            border: 0.5rem solid white;
+            width: 15rem;
+            height: 15rem;
+            object-fit: cover;
+            margin-bottom: 3rem;
+        }
+    
+        .greeting {
+            text-align: center;
+            font-size: 2.2rem;
+            color: white;
+            line-height: 1.5;
+            margin-bottom: 3rem;
+        }
+    
+        .btn-outline-light {
+            color: white;
+            font-size: 1.7rem;
+        }
+        
+        .btn-outline-light:hover {
+            color: black;
+        }        
+    }
+
+    &.about {
+        @extend .content;
+        background-color: #0f244d;
+    }
+
+    &.experience {
+        background-color: #2f446d;
+    }
+
+    &.projects {
+        @extend .content;
+        background-color: #40546c;
+    }
+
+    &.contact {
+        @extend .content;
+        flex-direction: column;
+        background-color: #000c24;
+
+        .contact-links {
+            margin-top: 9rem;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+        }
+    
+        .contact-box {
+            opacity: 0.7;
+        }
+    
+        .contact-box:hover {
+            opacity: 1;
+        }
+    
+        .contact-text {
+            text-align: center;
+            font-weight: lighter;
+            font-size: 1.6rem;
+            color: white;
+        }
+    
+        .contact-img {
+            height: 13rem;
+            width: 13rem;
+    
+            &.linkedin-img {
+                @extend .contact-img;
+                filter: invert(1);
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }        
+    }
+}

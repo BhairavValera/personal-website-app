@@ -4,11 +4,11 @@ import FadeIn from 'react-fade-in'
 class About extends Component {
     render() {
         return (
-            <div id='About'>
-                <div id="about-title">
+            <div class="content about">
+                <div class="page-title">
                     About
                 </div>
-                <div id='about-section' align="justify">
+                {/* <div id='about-section' align="justify">
                     <FadeIn delay='100'>
                         I majored in Physics and minored in Computer Science at the University of Illinois
                         at Urbana-Champaign (UIUC).
@@ -26,7 +26,7 @@ class About extends Component {
                         In my free time, I pursue my artistic passions, namely, music, creative writing, and 
                         photography.
                     </FadeIn>
-                </div>
+                </div> */}
             </div>
         )
     }

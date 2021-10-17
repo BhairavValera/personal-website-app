@@ -23,51 +23,56 @@ class TimeLine extends Component {
                 <TimelineItem>
                     <TimelineOppositeContent>April 2021 — Present</TimelineOppositeContent>
                     <TimelineSeparator>
-                    <TimelineDot />
+                    <TimelineDot variant='outlined'/>
                     <TimelineConnector />
                     </TimelineSeparator>
-                    <this.StyledTimelineContent>
-                        <ExperienceCard companyName='netInspect'></ExperienceCard>
-                    </this.StyledTimelineContent>
+                    <TimelineContent>
+                        Net-Inspect, LLC
+                        {/* <ExperienceCard companyName='netInspect'></ExperienceCard> */}
+                    </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineOppositeContent>July 2020 — March 2021</TimelineOppositeContent>                    
                     <TimelineSeparator>
-                    <TimelineDot/>
+                    <TimelineDot variant='outlined'/>
                     <TimelineConnector />
                     </TimelineSeparator>
-                    <this.StyledTimelineContent>
-                        <ExperienceCard companyName='percolata'></ExperienceCard>
-                    </this.StyledTimelineContent>
+                    <TimelineContent>
+                        Percolata Corporation
+                        {/* <ExperienceCard companyName='percolata'></ExperienceCard> */}
+                    </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineOppositeContent>June 2019 — August 2019</TimelineOppositeContent>
                     <TimelineSeparator>
-                    <TimelineDot/>
+                    <TimelineDot variant='outlined'/>
                     <TimelineConnector />
                     </TimelineSeparator>
-                    <this.StyledTimelineContent>
-                        <ExperienceCard companyName='anl'></ExperienceCard>
-                    </this.StyledTimelineContent>
+                    <TimelineContent>
+                        Argonne National Laboratory
+                        {/* <ExperienceCard companyName='anl'></ExperienceCard> */}
+                    </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineOppositeContent>November 2018 — July 2020</TimelineOppositeContent>
                     <TimelineSeparator>
-                    <TimelineDot />
+                    <TimelineDot variant='outlined'/>
                     <TimelineConnector />
                     </TimelineSeparator>
-                    <this.StyledTimelineContent>
-                        <ExperienceCard companyName='illinois'></ExperienceCard>
-                    </this.StyledTimelineContent>
+                    <TimelineContent>
+                        University of Illinois at Urbana-Champaign
+                        {/* <ExperienceCard companyName='illinois'></ExperienceCard> */}
+                    </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineOppositeContent>June 2018 — August 2018</TimelineOppositeContent>
                     <TimelineSeparator>
-                    <TimelineDot />
+                    <TimelineDot id='timeline-dot' color='green' variant='outlined'/>
                     </TimelineSeparator>
-                    <this.StyledTimelineContent>
-                        <ExperienceCard companyName='bnl'></ExperienceCard>
-                    </this.StyledTimelineContent>
+                    <TimelineContent>
+                        Brookhaven National Laboratory
+                        {/* <ExperienceCard companyName='bnl'></ExperienceCard> */}
+                    </TimelineContent>
                 </TimelineItem>
             </Timeline>
         )

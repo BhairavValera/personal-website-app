@@ -15,36 +15,38 @@ class Contact extends Component {
 
     render() {
         return (
-            <div id='Contact'>                
-                <div id="contact-title" align="justify">
+            <div class="content contact">                
+                <div class="page-title">
                     Contact
                 </div>
-                <div id="contact-links">
-                    <div id="github-box">
+                <div class="contact-links">
+                    <div class="contact-box">
                         <a href="https://github.com/bhairavvalera">
-                            <img src={github} alt='github' className='github'></img>
-                            <figcaption id="github-text">
+                            <img src={github} alt="github" class="contact-img"></img>
+                            <figcaption class="contact-text">
                                 <br></br>
                                 Follow me
                             </figcaption>
                         </a>
                     </div>
-                    <div id="linkedin-box">
+                    <div class="contact-box">
                         <a href="https://www.linkedin.com/in/bhairavvalera/">
-                            <img src={linkedin} alt='linkedin' className='linkedin'></img>
-                            <figcaption id="linkedin-text">
+                            <img 
+                                src={linkedin} alt="linkedin" 
+                                class="contact-img linkedin-img"></img>
+                            <figcaption class="contact-text">
                                 <br></br>
                                 Connect with me
                             </figcaption>
                         </a>
                     </div>
-                    <div id="mail-box" onClick={this.mailBoxOnClick}>
-                        <img src={mail} alt='mail' className='mail'></img>
-                        <figcaption id="mail-text">
+                    <div class="contact-box" onClick={this.mailBoxOnClick}>
+                        <img src={mail} alt="mail" class="contact-img"></img>
+                        <figcaption class="contact-text">
                             <br></br>
                             Email me
                         </figcaption>
-                    </div>             
+                    </div>
                 </div>
             </div>
         )

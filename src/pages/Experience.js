@@ -4,12 +4,9 @@ import TimeLine from '../components/Timeline'
 class Experience extends Component {
     render() {
         return (
-            <div id='Experience'>
-                <div id="experience-title">
+            <div class='content experience'>
+                <div class="page-title">
                     Experience
-                </div>
-                <div id='Timeline'>
-                    <TimeLine/>
                 </div>
             </div>
         )

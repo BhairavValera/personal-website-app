@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 class Projects extends Component {
     render() {
         return (
-            <div id='Projects'>
-                <div id="projects-title" align="justify">
+            <div class="content projects">
+                <div class="page-title">
                     Projects
                 </div>
             </div>
