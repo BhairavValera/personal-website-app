@@ -11,12 +11,12 @@ import NavIcons from './components/NavIcons';
 function App() {
   return (
     <div class="app">
+      <NavIcons/>
       <Home />
       <About />
       <Experience />
       <Projects />
       <Contact />
-      <NavIcons/>
     </div>
   )
 }

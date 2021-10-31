@@ -11132,27 +11132,22 @@ body {
 }
 
 .nav {
-  right: 1rem;
-  top: 45%;
-  height: 5rem;
-  z-index: 999;
   position: fixed;
+  top: 45%;
+  right: 0px;
+  z-index: 999;
 }
 .nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  width: 5rem;
+  height: 5rem;
 }
 .nav ul li {
-  position: relative;
-  background-color: white;
-  border: 3px solid white;
-  border-radius: 15px 15px 15px 15px;
-  cursor: pointer;
-  height: 1rem;
-  width: 1rem;
-  margin-bottom: 15px;
-  vertical-align: bottom;
+  margin-bottom: 0.5rem;
+}
+.nav ul li .btn-outline-light {
+  border-radius: 50%;
+  padding: 4px;
 }
 
 .content, .content.contact, .content.projects, .content.about, .content.home {
@@ -11240,6 +11235,7 @@ body {
 .content.contact .contact-img, .content.contact .contact-img.linkedin-img {
   height: 13rem;
   width: 13rem;
+  cursor: pointer;
 }
 .content.contact .contact-img.linkedin-img {
   filter: invert(1);
