@@ -1,10 +1,12 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,700&subset=latin-ext&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext&display=swap');
 
-$font-stack: Josefin Slab;
+$font-stack-josefin: Josefin Slab;
+$font-stack-lato: Lato;
 
 body {
-    font: 100% $font-stack;
+    font: 100% $font-stack-josefin;
 }
 
 * {
@@ -99,6 +101,17 @@ body {
     &.about {
         @extend .content;
         background-color: #0f244d;
+        flex-direction: column;
+
+        .about-info {
+            margin-left: 4rem;
+            margin-top: 4rem;
+            margin-right: 40rem;
+            font: 100% $font-stack-josefin;
+            font-size: 2rem;
+            text-align: justify;
+            color: white;
+        }
     }
 
     &.experience {

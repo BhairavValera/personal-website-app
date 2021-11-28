@@ -8,25 +8,22 @@ class About extends Component {
                 <div class="page-title">
                     About
                 </div>
-                {/* <div id='about-section' align="justify">
-                    <FadeIn delay='100'>
-                        I majored in Physics and minored in Computer Science at the University of Illinois
-                        at Urbana-Champaign (UIUC).
+                <div className='about-info'>
+                    <FadeIn>
+                        I'm a Full-Stack Software Engineer, currently working out of Seattle.
                         <br />
                         <br />
-                        College was a transformative experience for me, where I
-                        discovered many passions, one of which is writing clean, modular, and performant code.
-                        <br />
-                        <br />
-                        Over time, I've garnered skills in Linux/Unix administration, 
+                        I have expertise in Linux/Unix administration, 
                         .NET, Java, and Python development, Cloud Computing, and Data Warehousing.
-                        I continue push myself to learn about emergent tools and technologies every day!
                         <br />
                         <br />
-                        In my free time, I pursue my artistic passions, namely, music, creative writing, and 
+                        In my free time, I continue push myself to learn about emergent tools and technologies every day!
+                        <br />
+                        <br />
+                        I pursue my artistic passions, namely, music, creative writing, and 
                         photography.
                     </FadeIn>
-                </div> */}
+                </div>
             </div>
         )
     }

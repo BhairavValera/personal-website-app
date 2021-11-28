@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,700&subset=latin-ext&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11203,6 +11204,16 @@ body {
 }
 .content.about {
   background-color: #0f244d;
+  flex-direction: column;
+}
+.content.about .about-info {
+  margin-left: 4rem;
+  margin-top: 4rem;
+  margin-right: 40rem;
+  font: 100% Josefin Slab;
+  font-size: 2rem;
+  text-align: justify;
+  color: white;
 }
 .content.experience {
   background-color: #2f446d;

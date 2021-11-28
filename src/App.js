@@ -1,16 +1,15 @@
-import React from 'react'
+import React from 'react';
 import './App.css';
-import Home from './pages/Home'
-import About from './pages/About'
-import Experience from './pages/Experience'
-import Projects from './pages/Projects'
-import Contact from './pages/Contact'
-import FadeIn from 'react-fade-in'
 import NavIcons from './components/NavIcons';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Experience from './pages/Experience';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
 
 function App() {
   return (
-    <div class="app">
+    <div className='app'>
       <NavIcons/>
       <Home />
       <About />
